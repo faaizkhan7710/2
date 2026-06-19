@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #28a745; /* Sustainability Green */
+    --secondary-color: #ff9800; /* Food Orange */
+    --dark-color: #2c3e50;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.bg-success {
+    background-color: var(--primary-color) !important;
+}
+
+.text-success {
+    color: var(--primary-color) !important;
+}
+
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-warning {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-link {
+    display: block;
+    padding: 15px 25px;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.dashboard-stats i {
+    font-size: 2.5rem;
+    opacity: 0.3;
+}
+
+.badge-urgent {
+    background-color: #dc3545;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0.5; }
+}
+
+.freshness-bar {
+    height: 8px;
+    border-radius: 4px;
+}
+
+/* Auth Pages */
+.auth-card {
+    max-width: 500px;
+    margin: 50px auto;
+}
